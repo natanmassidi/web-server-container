@@ -1,0 +1,26 @@
+README do monitoramento-logs
+Monitoramento e Logs do Servidor Nginx
+
+Esta parte do projeto tem como objetivo configurar e visualizar os logs de acesso e download do servidor Nginx em execução no container Docker.
+
+O que foi feito
+
+Configuração para que o Nginx gere logs de acesso.
+
+Criação de scripts simples para visualizar e acompanhar os logs.
+
+(Opcional) Sugestão de uso de ferramentas como logrotate ou Glances para monitoramento do sistema.
+
+Como usar
+
+1 - Ver logs em tempo real do container
+
+ docker logs -f nginx-iso
+
+2 - Acompanhar acessos (últimas 20 linhas):
+
+ docker logs --tail 20 nginx-iso
+
+3 - Script para visualizar downloads (exemplo):
+
+./monitor.sh
